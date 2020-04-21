@@ -49,17 +49,16 @@ class SignUpForm extends React.Component {
                         emailValid: emailValid,
                         passwordValid: passwordValid
                       }, this.validateForm);
-      }
+    }
     
-      validateForm() {
+    validateForm() {
         this.setState({formValid: this.state.emailValid && this.state.passwordValid});
-      }
+    }
     
-      errorClass(error) {
+    errorClass(error) {
         return(error.length === 0 ? '' : 'has-error');
-      }
+    }
     
-
     render () {
         return (
             <form className="demoForm">
